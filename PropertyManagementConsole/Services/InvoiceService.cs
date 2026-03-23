@@ -1,3 +1,4 @@
+// Leader: Invoice generation logic reviewed and structured
 using System;
 using System.Collections.Generic;
 using Microsoft.Data.SqlClient;
