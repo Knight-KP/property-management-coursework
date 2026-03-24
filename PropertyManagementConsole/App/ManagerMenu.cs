@@ -223,6 +223,7 @@ public static class ManagerMenu
         }
     }
 
+    // Dev2 update: improved electric module integration and manager menu flow
     private static void AddModuleJob(JobModuleService service)
     {
         int? tenantId = InputHelper.ReadInt("\nTenant ID: ");
