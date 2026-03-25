@@ -25,6 +25,7 @@ public class InvoiceService
         var monthlyJobs = _maintenanceRepository.GetJobsByTenantMonth(tenantId, month, year);
         decimal extraCharges = InvoiceCalculator.CalculateExtrasTotal(monthlyJobs);
 
+        // Leader update: reviewed monthly and custom invoice flow for final billing consistency
         var invoice = new Invoice
         {
             TenantId = tenantId,
