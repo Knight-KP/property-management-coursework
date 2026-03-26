@@ -9,6 +9,7 @@ namespace PropertyManagementConsole.Data.Repositories;
 
 public class ComplaintRepository
 {
+    // Dev2 update: refined electric data handling and status integration
     public void AddComplaint(Complaint complaint)
     {
         using var conn = new SqlConnection(DbConfig.ConnectionString);
