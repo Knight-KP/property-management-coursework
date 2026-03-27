@@ -310,6 +310,7 @@ public static class ManagerMenu
         }
     }
 
+    // Leader update: reviewed manager workflow for stable integration across billing and complaint handling
     private static void ShowInvoiceGenerationMenu()
     {
         var service = new InvoiceService();
