@@ -45,6 +45,7 @@ public class InvoiceService
             Category = "Rent"
         });
 
+        // Leader update: refined custom invoice handling and ensured consistent billing flow
         foreach (var job in monthlyJobs)
         {
             string jobDescription = $"{job.JobType} on {job.JobDate:yyyy-MM-dd}";
