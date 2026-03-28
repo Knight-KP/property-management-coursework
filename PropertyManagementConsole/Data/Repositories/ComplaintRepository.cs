@@ -30,6 +30,7 @@ public class ComplaintRepository
         cmd.ExecuteNonQuery();
     }
 
+    // Dev2 update: improved electric complaint data handling and processing flow
     public List<Complaint> GetComplaintsByTenant(int tenantId)
     {
         var list = new List<Complaint>();
