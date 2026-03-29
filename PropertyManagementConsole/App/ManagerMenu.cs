@@ -195,6 +195,7 @@ public static class ManagerMenu
         }
     }
 
+        // Dev2 follow-up: reviewed electric workflow after recent integration changes
     private static void ShowJobModuleMenu(JobModuleService service)
     {
         while (true)
