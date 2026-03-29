@@ -14,6 +14,7 @@ public class InvoiceService
     private readonly MaintenanceRepository _maintenanceRepository = new MaintenanceRepository();
     private readonly InvoiceRepository _invoiceRepository = new InvoiceRepository();
 
+    // Leader update: reviewed invoice workflow stability ahead of final integration phase
     public int GenerateMonthlyInvoice(int tenantId, int flatId, int month, int year)
     {
         decimal? baseRent = _flatRepository.GetBaseRentByFlatId(flatId);
@@ -66,6 +67,7 @@ public class InvoiceService
         return newInvoiceId;
     }
 
+    // Leader update: reviewed invoice workflow stability ahead of final integration phase
     public int GenerateInvoiceWithCustomCharges(int tenantId, int flatId, int month, int year, List<InvoiceLine> extraLines)
     {
         if (extraLines == null || extraLines.Count == 0)
