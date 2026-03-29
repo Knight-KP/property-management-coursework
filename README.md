@@ -7,3 +7,11 @@
 - Saiyam (Dev 1): Plumbing module, validation logic, partial database interaction
 - Manav (Dev 2): Electric module, menu integration, data storage logic
 - Justin (Tester): Unit testing, bug reporting, minor bug fixing and validation improvements
+
+## Project Features
+
+- Tenant management
+- Complaint handling (plumbing, electric, structural, cleaning)
+- Invoice generation (monthly and custom)
+- Maintenance job tracking
+- Input validation and system checks
