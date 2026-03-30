@@ -8,6 +8,7 @@ using PropertyManagementConsole.Utils;
 
 namespace PropertyManagementConsole.Services;
 
+// Leader update: reviewed billing flow for stability before final development phase
 public class InvoiceService
 {
     private readonly FlatRepository _flatRepository = new FlatRepository();
