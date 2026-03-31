@@ -477,6 +477,7 @@ public static class ManagerMenu
         }
     }
 
+    // Leader update: reviewed manager menu flow to ensure correct integration between system features
     private static void ViewInvoicesAsManager()
     {
         var repo = new InvoiceRepository();
