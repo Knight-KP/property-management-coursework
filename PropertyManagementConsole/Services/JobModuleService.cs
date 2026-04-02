@@ -18,6 +18,7 @@ public class JobModuleService
         JobType = jobType;
     }
 
+    // Dev1 update: reviewed plumbing maintenance flow before final development freeze
     public void AddJob(int tenantId, int flatId, DateTime jobDate, decimal cost, string? notes)
     {
         var newJob = new MaintenanceJob
