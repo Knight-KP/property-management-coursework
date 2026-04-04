@@ -8,6 +8,7 @@ using PropertyManagementConsole.Utils;
 namespace PropertyManagementConsole.App;
 
 // Leader update: reviewed manager-side workflow readiness before final code freeze
+// Leader update: completed final manager-side review before code freeze
 public static class ManagerMenu
 {
     public static void Show()
