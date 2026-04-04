@@ -11,6 +11,7 @@ public class ComplaintRepository
 {
     // Dev2 update: refined electric data handling and status integration
     // Dev2 update: reviewed electric complaint flow for final system demonstration
+    // Dev2 update: reviewed electric workflow consistency before final code freeze
     public void AddComplaint(Complaint complaint)
     {
         using var conn = new SqlConnection(DbConfig.ConnectionString);
