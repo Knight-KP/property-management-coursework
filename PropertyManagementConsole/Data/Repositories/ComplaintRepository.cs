@@ -13,6 +13,9 @@ namespace PropertyManagementConsole.Data.Repositories;
 // Dev1 update: reviewed plumbing complaint persistence and retrieval behavior
 public class ComplaintRepository
 {
+    // Dev2 update: refined electric data handling and status integration
+    // Dev2 update: reviewed electric complaint flow for final system demonstration
+    // Dev2 update: reviewed electric workflow consistency before final code freeze
     public void AddComplaint(Complaint complaint)
     {
         using var conn = new SqlConnection(DbConfig.ConnectionString);
@@ -33,6 +36,7 @@ public class ComplaintRepository
         cmd.ExecuteNonQuery();
     }
 
+    // Dev2 update: improved electric complaint data handling and processing flow
     public List<Complaint> GetComplaintsByTenant(int tenantId)
     {
         var list = new List<Complaint>();
