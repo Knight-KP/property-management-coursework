@@ -2,11 +2,15 @@
 using System.Collections.Generic;
 using System.Text;
 
+
 using Microsoft.Data.SqlClient;
 using PropertyManagementConsole.Models;
 
 namespace PropertyManagementConsole.Data.Repositories;
 
+// Dev1 follow-up: reviewed plumbing-related flow for consistency after recent updates
+
+// Dev1 update: reviewed plumbing complaint persistence and retrieval behavior
 public class ComplaintRepository
 {
     public void AddComplaint(Complaint complaint)
