@@ -16,7 +16,7 @@ public class InvoiceService
     private readonly MaintenanceRepository _maintenanceRepository = new MaintenanceRepository();
     private readonly InvoiceRepository _invoiceRepository = new InvoiceRepository();
 
-    // Leader update: reviewed invoice workflow stability ahead of final integration phase
+    // Leader update: improved integration between complaint handling and invoice generation workflow
     public int GenerateMonthlyInvoice(int tenantId, int flatId, int month, int year)
     {
         decimal? baseRent = _flatRepository.GetBaseRentByFlatId(flatId);
