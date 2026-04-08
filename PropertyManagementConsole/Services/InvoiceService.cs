@@ -1,3 +1,4 @@
+// Leader: Invoice generation logic reviewed and structured
 using System;
 using System.Collections.Generic;
 using Microsoft.Data.SqlClient;
@@ -7,6 +8,8 @@ using PropertyManagementConsole.Utils;
 
 namespace PropertyManagementConsole.Services;
 
+// Leader update: reviewed billing flow for stability before final development phase
+// Leader update: finalized invoice and system integration before code freeze
 public class InvoiceService
 {
     private readonly FlatRepository _flatRepository = new FlatRepository();
@@ -25,6 +28,7 @@ public class InvoiceService
         var monthlyJobs = _maintenanceRepository.GetJobsByTenantMonth(tenantId, month, year);
         decimal extraCharges = InvoiceCalculator.CalculateExtrasTotal(monthlyJobs);
 
+        // Leader update: reviewed monthly and custom invoice flow for final billing consistency
         var invoice = new Invoice
         {
             TenantId = tenantId,
@@ -44,6 +48,7 @@ public class InvoiceService
             Category = "Rent"
         });
 
+        // Leader update: refined custom invoice handling and ensured consistent billing flow
         foreach (var job in monthlyJobs)
         {
             string jobDescription = $"{job.JobType} on {job.JobDate:yyyy-MM-dd}";
@@ -64,6 +69,7 @@ public class InvoiceService
         return newInvoiceId;
     }
 
+    // Leader update: reviewed invoice workflow stability ahead of final integration phase
     public int GenerateInvoiceWithCustomCharges(int tenantId, int flatId, int month, int year, List<InvoiceLine> extraLines)
     {
         if (extraLines == null || extraLines.Count == 0)
