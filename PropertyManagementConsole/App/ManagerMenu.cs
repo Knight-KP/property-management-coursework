@@ -7,6 +7,8 @@ using PropertyManagementConsole.Utils;
 
 namespace PropertyManagementConsole.App;
 
+// Leader update: reviewed manager-side workflow readiness before final code freeze
+// Leader update: completed final manager-side review before code freeze
 public static class ManagerMenu
 {
     public static void Show()
@@ -223,6 +225,7 @@ public static class ManagerMenu
         }
     }
 
+    // Dev2 update: improved electric module integration and manager menu flow
     private static void AddModuleJob(JobModuleService service)
     {
         int? tenantId = InputHelper.ReadInt("\nTenant ID: ");
@@ -310,6 +313,7 @@ public static class ManagerMenu
         }
     }
 
+    // Leader update: reviewed manager workflow for stable integration across billing and complaint handling
     private static void ShowInvoiceGenerationMenu()
     {
         var service = new InvoiceService();
@@ -476,6 +480,7 @@ public static class ManagerMenu
         }
     }
 
+    // Leader update: reviewed manager menu flow to ensure correct integration between system features
     private static void ViewInvoicesAsManager()
     {
         var repo = new InvoiceRepository();

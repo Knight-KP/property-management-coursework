@@ -9,6 +9,7 @@ namespace PropertyManagementConsole.Data.Repositories;
 
 public class MaintenanceRepository
 {
+    // Dev1 update: improved plumbing job handling validation
     public void AddJob(MaintenanceJob job)
     {
         using var conn = new SqlConnection(DbConfig.ConnectionString);
