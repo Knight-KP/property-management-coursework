@@ -41,3 +41,17 @@ This separation improves maintainability and clarity of the system.
 - .NET Console Application
 - Microsoft.Data.SqlClient
 - MSTest for testing
+
+## How does the software work
+
+- This software is based on console output, there exists two different type of user to operate this software ,i.e. manager, tenant,
+- Manager manages the listed flats starting from providing monthly invoices (custom extra charges included), tenant complaint handling module, etc.
+- Tenant has access to raise a complaint, view their past complaints and check their complaint status, and can view their all type of invoices provided by the manager
+
+## Manager menu
+
+- This consists of different operations provided to the manager like adding/removing/viewing tenants, generate invoices for tenant, view open complaints by all tenants, change the complaint progress status so that it changes for the tenant perspective as well.
+
+## Tenant menu
+
+- This basically consists of options for tenant like view their invoices, raise a complaint, and view complaints or complaint's status.
